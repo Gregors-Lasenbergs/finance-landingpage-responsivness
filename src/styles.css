@@ -1,0 +1,661 @@
+:root{
+    --c-bg: #FFFFFF;
+    --c-header-btn: #F5F6FB;
+    --c-main-btn: #1F7CFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c-bg);
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #575455;
+    margin: 2rem 4rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+}
+
+h1{
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+}
+
+h2{
+    font-family: Poppins, sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+}
+
+h3{
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #000000;
+}
+
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.header__logo__img{
+
+}
+
+.header__logo__txt{
+
+}
+
+.header__navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 48px;
+    color: #070F18;
+}
+
+.header__navBar > a{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.navBar-animation{
+    transition: 0.3s;
+
+    &:hover{
+        font-size: 2.5rem;
+    }
+}
+
+.header__signIn-button{
+    background-color: var(--c-header-btn);
+    border-radius: 2rem;
+    border-style: none;
+    width: 150px;
+    height: 48px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #070F18;
+
+
+
+
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #d9d9e0;
+        cursor: pointer;
+    }
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 2rem;
+    width: 100%;
+}
+
+.main-section__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 28%;
+}
+
+.main-section__right{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem 6rem;
+    width: 60%;
+}
+
+.main-section__right > image{
+    width: 100%;
+}
+
+.main-section__right > img{
+    border-radius: 3rem;
+}
+
+.main-section__left__btn{
+    margin-top: 1rem;
+    background-color: var(--c-main-btn);
+    border-radius: 2rem;
+    border-style: none;
+    width: 200px;
+    height: 48px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: var(--c-bg);
+
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #175ec9;
+        cursor: pointer;
+    }
+}
+
+.trusted-by{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem 2rem;
+    width: 95%;
+}
+
+.trusted-by > p{
+    width: 151px;
+    height: 48px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.trusted-by__companies{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 90%;
+
+    flex-wrap: wrap;
+
+    margin: 1rem 2rem;
+    gap: 4rem;
+}
+
+.for-business{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title > abbr{
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F75C4E;
+}
+
+.title > h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0.5rem 0rem;
+}
+
+.title > p{
+    width: 400px;
+    text-align: center;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    column-gap: 12rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+}
+
+.services__service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 400px;
+    height: 106px;
+}
+
+.services__service__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.service__icon-bg-color1{
+    background-color: #1F7CFF;
+}
+.service__icon-bg-color2{
+    background-color: #F75C4E;
+}
+.service__icon-bg-color3{
+    background-color: #191046;
+}
+.service__icon-bg-color4{
+    background-color: #FF1FB3;
+}
+.service__icon-bg-color5{
+    background-color: #5C4EF7;
+}
+.service__icon-bg-color6{
+    background-color: #5C4EF7;
+}
+
+.services__service__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding-left: 1.5rem;
+    width: 60%;
+    text-align: left;
+}
+
+.getStarted{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+    width: 100%;
+    gap: 10rem;
+}
+
+.getStarted__signUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+}
+
+.getStarted__video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+}
+
+.getStarted__video > img{
+    border-radius: 2rem;
+    width: 80%;
+}
+
+.getStarted__signUp__title{
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+}
+
+.getStarted__signUp__title > p{
+    text-align: left;
+    width: 100%;
+}
+
+.getStarted__signUp__title__btn-container{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 3rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    background-color: #F5F6FB;
+    color: #575455;
+}
+.getStarted__signUp__title__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 2.9rem;
+    border-style: hidden;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #F5F6FB;
+    color: #575455;
+}
+
+
+.getStarted__signUp__title__btn-container > button{
+    height: 3rem;
+    width: 50%;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 16px;
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #1F7CFF;
+
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #175ec9;
+        cursor: pointer;
+    }
+}
+
+.play-btn{
+    text-align: left;
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getStarted__signUp__title__btn-container__btn2{
+    margin-top: 1.5rem;
+    display: none;
+    visibility: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 3rem;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    background-color: #F5F6FB;
+    color: #575455;
+    outline: none;
+    border-style: none;
+}
+
+.getStarted__signUp__title__btn-container2{
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 80%;
+    gap: 1rem;
+}
+
+.getStarted__signUp__title__btn-container2 > button{
+    height: 3rem;
+    width: 100%;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 16px;
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #1F7CFF;
+}
+
+@media screen and (max-width: 1050px) {
+    .services{
+        flex-direction: row;
+        row-gap: 4rem;
+        column-gap: 0;
+    }
+
+    .trusted-by{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .trusted-by__companies{
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .trusted-by > p {
+        width: 100%;
+    }
+
+    .main-section__right{
+        display: none;
+        visibility: hidden;
+    }
+
+    .main-section__left{
+        align-items: center;
+        width: 50%;
+        text-align: center;
+    }
+
+    .header__navBar{
+        display: none;
+        visibility: hidden;
+    }
+
+    body{
+        justify-content: start;
+        align-items: start;
+        height: 2800px;
+    }
+
+    .getStarted{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .getStarted__video{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .getStarted__signUp__title{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .getStarted__signUp__title > p{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    h2{
+        margin-top: 2rem;
+        font-size: 38px;
+        padding: 0 0;
+    }
+
+    .header__navBar{
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__signIn-button{
+        display: none;
+        visibility: hidden;
+    }
+
+    .main-section__right{
+        display: none;
+        visibility: hidden;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        height: 2500px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-section__left{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .trusted-by__companies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+
+        flex-wrap: wrap;
+
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .getStarted{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .getStarted__signUp{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        width: 100%;
+    }
+
+    .getStarted__signUp__title{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    .getStarted__signUp__title > abbr{
+        text-align: center;
+    }
+
+    .getStarted__signUp__title > h3{
+        text-align: center;
+    }
+
+    .getStarted__signUp__title > p{
+        text-align: center;
+    }
+
+    .getStarted__video{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .trusted-by > p{
+        width: 300px;
+    }
+
+    .main-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+
+    .services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .trusted-by{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .for-business{
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+
+    .getStarted__signUp__title__btn-container {
+        display: none;
+        visibility: hidden;
+    }
+
+    .getStarted__signUp__title__btn-container2{
+        visibility: visible;
+        display: flex;
+    }
+
+    .getStarted__signUp__title__btn-container__btn2{
+        visibility: visible;
+        display: flex;
+    }
+}
+
