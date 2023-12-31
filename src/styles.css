@@ -167,7 +167,7 @@ h3{
 .trusted-by{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     margin: 4rem 2rem;
     width: 95%;
